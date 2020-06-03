@@ -12,7 +12,8 @@ const optionIds = [
     'validationPropertiesToIgnore',
     'showMissingInSchemaErrors',
     'detailedBlobValidation',
-    'strictRequestMatching'
+    'strictRequestMatching',
+    'suggestAvailableFixes'
   ],
   expectedOptions = {
     collapseFolders: {
@@ -99,6 +100,12 @@ const optionIds = [
       type: 'boolean',
       default: false,
       description: 'Whether schema operations be strictly matched with collection request or not.'
+    },
+    suggestAvailableFixes: {
+      name: 'Suggest fixes if available',
+      type: 'boolean',
+      default: false,
+      description: 'Whether to provide fixes for patching corresponding mismatches.'
     }
   };
 

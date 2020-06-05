@@ -119,7 +119,8 @@ const optionIds = [
       name: 'Ignore mismatch for unresolved postman variables',
       type: 'boolean',
       default: false,
-      description: 'Whether to ignore mismatch thrown upon validation of unresolved collection/environment variable'
+      description: 'Whether requests should be strictly matched with schema operations. Setting to true will not ' +
+        'include any matches where the URL path segments don\'t match exactly.'
     }
   };
 
